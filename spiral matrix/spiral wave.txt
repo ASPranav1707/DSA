@@ -1,0 +1,43 @@
+ class Main {
+
+	public static void main(String[] args)
+	{
+	    int a[][]= {{11,12,13,14},{15,16,17,18},{19,20,21,22},{23,24,25,26}};
+
+		int top=0,bottom=3,left=0,right=3,d=0;
+		while(top<=bottom && left<=right)
+		{
+			if(d==0)
+			{
+				for(int i=left;i<=right;i++)
+				{
+					System.out.print(a[top][i]+" ");
+				}
+				top++;
+			}
+			else if(d==1) {
+				for(int i=top;i<=bottom;i++)
+				{
+					System.out.print(a[i][right]+" ");
+				}
+				right--;
+			}
+			else if(d==2)
+			{
+				for(int i=right;i>=left;i--) {
+					System.out.print(a[bottom][i]+" ");
+				}
+				bottom--;
+			}
+			else if(d==3) {
+				for(int i=bottom;i>=top;i--) {
+					System.out.print(a[i][left]+" ");
+				}
+				left++;
+			}
+			d=(d+1)%4;
+		}
+
+	}
+
+}

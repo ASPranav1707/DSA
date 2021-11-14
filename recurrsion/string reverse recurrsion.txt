@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main 
+{
+     public static void reverse(char c[], int n)
+    {
+        if (n== c.length) {
+            return;
+        }
+        reverse(c, n + 1);
+        System.out.print(c[n]);
+    }
+
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        char c[] = s.toCharArray();
+        reverse(c, 0);
+        
+    }
+
+}

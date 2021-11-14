@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main 
+{
+     private static int Sum(int a[], int n)
+     {
+ 
+         if (n <= 0) 
+         {
+            return 0;
+          }
+          return Sum(a,n-1 )+a[n-1];
+      }
+ 
+
+    public static void main(String[] args)
+    {
+        int a[]={1,2,5,5,10};
+        int ans=Sum(a,a.length);
+        System.out.println(ans);
+        
+        
+    }
+
+}

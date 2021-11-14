@@ -1,0 +1,20 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args)
+	{
+	    List<Integer> org = new ArrayList<>();
+		List<Integer> copy = new ArrayList<>();
+		org.add(15);
+		org.add(9);
+		org.add(19);
+		org.add(98);
+		for(int i=0; i<org.size(); i++) 
+		{
+			copy.add(org.get(i));
+		}
+		for(int i : copy) 
+		System.out.print(i+" ");
+	}
+
+}

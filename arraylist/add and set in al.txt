@@ -1,0 +1,19 @@
+import java.util.*;
+ class Main {
+     public static void main(String []args)
+     {
+		ArrayList<String> al= new ArrayList<>();
+		al.add("As");
+		al.add("Pranav");
+		al.add("Msd");
+		al.add("Messi");
+		al.add("Pepe");
+		al.add("Zidane");
+		al.set(3, "Ronaldo");
+		for(String ans:al) 
+		{
+			System.out.println(ans);
+		}
+	}
+
+}
